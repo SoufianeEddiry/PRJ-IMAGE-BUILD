@@ -49,9 +49,7 @@
         "type": "ansible",
         "playbook_file": "os-hardening.yml",
         "use_proxy": false,
-        "extra_arguments": [
-        "--extra-vars", "user=root"
-  ]
+        "sftp_command": "/usr/libexec/openssh/sftp-server -e",
     }]
 }
 
