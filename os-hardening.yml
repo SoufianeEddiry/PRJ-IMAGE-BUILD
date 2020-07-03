@@ -1,5 +1,5 @@
 ---
 - hosts: all
-  become: false
+  become: true
   roles:
     - role: dev-sec.os-hardening
