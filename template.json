@@ -20,7 +20,7 @@
       "ethernet0.networkName" : "VM Network"
     },
     "iso_url": "{{user `iso_url`}}",
-    "remote_cache_datastore" : "/vmfs/volumes/datastore1",
+    "remote_cache_datastore" : "datastore1",
     "remote_cache_directory" :  "packer_cache",
     "iso_checksum": "none",
     "ssh_wait_timeout": "30m",
