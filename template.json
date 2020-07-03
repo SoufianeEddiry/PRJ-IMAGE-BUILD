@@ -26,6 +26,7 @@
     "ssh_wait_timeout": "30m",
     "ssh_username": "root",
     "ssh_password": "packer",
+    "remote_port": "22",
     "shutdown_command": "/sbin/halt -p",
     "boot_wait": "10s",
     "remote_type" : "esx5",
