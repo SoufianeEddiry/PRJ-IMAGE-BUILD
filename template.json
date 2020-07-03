@@ -20,7 +20,7 @@
       "ethernet0.networkName" : "VM Network"
     },
     "iso_url": "{{user `iso_url`}}",
-    "iso_checksum": "sha256:{{user `iso_sha256`}}",
+    "iso_checksum_type": "none",
     "ssh_wait_timeout": "30m",
     "ssh_username": "root",
     "ssh_password": "packer",
