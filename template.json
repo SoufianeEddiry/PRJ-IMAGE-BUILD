@@ -46,7 +46,8 @@
 
  "provisioners": [{
         "type": "ansible",
-        "playbook_file": "os-hardening.yml"
+        "playbook_file": "os-hardening.yml",
+        "use_proxy": false
     }]
 }
 
