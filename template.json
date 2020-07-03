@@ -47,7 +47,10 @@
  "provisioners": [{
         "type": "ansible",
         "playbook_file": "os-hardening.yml",
-        "use_proxy": false
+        "use_proxy": false,
+        "extra_arguments": [
+        "--extra-vars", "user=root"
+  ]
     }]
 }
 
