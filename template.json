@@ -50,10 +50,7 @@
         "playbook_file": "os-hardening.yml",
         "use_proxy": false,
         "sftp_command": "/usr/libexec/openssh/sftp-server -e",
-        "ansible_env_vars": [ "ANSIBLE_HOST_KEY_CHECKING=False", "ANSIBLE_SSH_ARGS='-o ForwardAgent=yes -o ControlMaster=auto -o ControlPersist=60s'"]
+     "ansible_env_vars": [ "ANSIBLE_HOST_KEY_CHECKING=False", "ANSIBLE_SSH_ARGS='-o ForwardAgent=yes -o ControlMaster=auto -o ControlPersist=60s'"]
    }]
-    }]
 }
 
-
-  
