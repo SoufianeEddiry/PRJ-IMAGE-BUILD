@@ -6,7 +6,6 @@
   },
 
   "builders": [{
-    "ssh_pty": true,
     "type": "vmware-iso",
     "vm_name": "{{user `vm_name`}}",
     "guest_os_type": "rhel7-64",
