@@ -62,7 +62,7 @@
         "insecure": "true",
         "username": "root",
         "password": "Password2020#",
-        "folder": "/Templates"
+        "folder": "/vmfs/volumes/datastore1/Templates"
       }
     ]
   ]
