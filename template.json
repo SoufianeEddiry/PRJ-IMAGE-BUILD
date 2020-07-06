@@ -50,6 +50,33 @@
         "playbook_file": "os-hardening.yml",
         "ansible_env_vars": [ "ANSIBLE_HOST_KEY_CHECKING=False", "ANSIBLE_SSH_ARGS='-o ForwardAgent=yes -o ControlMaster=auto -o ControlPersist=60s'", "ANSIBLE_NOCOLOR=True" ],
         "user": "jenkins"
-   }]
-}
+   }],
 
+"post-processors": [
+  [{
+        "type": "vsphere",
+        "cluster": "",
+        "host": "172.16.217.130",
+        "datacenter": "",
+        "username": "root",
+        "password": "password2020#",
+        "datastore": "datastore1",
+        "vm_name": "T_Ubuntu",
+        "vm_network": "VM Network",
+        "vm_folder": "/Templates",
+        "disk_mode": "thin",
+        "insecure": "true",
+        "overwrite": "true"
+      },
+      {
+        "type": "vsphere-template",
+        "host": "172.16.217.130",
+        "insecure": "true",
+        "datacenter": "",
+        "username": "root",
+        "password": "Password2020#",
+        "folder": "/Templates"
+      }
+    ]
+  ]
+}
