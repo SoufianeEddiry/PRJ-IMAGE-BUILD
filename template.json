@@ -37,7 +37,7 @@
     "format" : "ova",
     "floppy_files": ["kickstart/ks.cfg"],
     "vnc_disable_password" : "true",
-    "keep_registered": true,
+    /*"keep_registered": true,*/
     "skip_export": true,
     "boot_command": [
       "<esc><wait>",
@@ -62,7 +62,7 @@
         "insecure": "true",
         "username": "root",
         "password": "Password2020#",
-        "folder": "/vmfs/volumes/datastore1/Templates"
+        "folder": "/Templates"
       }
     ]
   ]
