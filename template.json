@@ -37,7 +37,7 @@
     "format" : "ova",
     "floppy_files": ["kickstart/ks.cfg"],
     "vnc_disable_password" : "true",
-    "skip_export": true,
+    "format" : "ova",
     "boot_command": [
       "<esc><wait>",
       "vmlinuz initrd=initrd.img inst.geoloc=0 rd.driver.blacklist=dm-multipath net.ifnames=0 biosdevname=0 ",
@@ -51,18 +51,5 @@
         "playbook_file": "os-hardening.yml",
         "ansible_env_vars": [ "ANSIBLE_HOST_KEY_CHECKING=False", "ANSIBLE_SSH_ARGS='-o ForwardAgent=yes -o ControlMaster=auto -o ControlPersist=60s'", "ANSIBLE_NOCOLOR=True" ],
         "user": "jenkins"
-   }],
-
-"post-processors": [
-  [
-      {
-        "type": "vsphere-template",
-        "host": "172.16.217.130",
-        "insecure": "true",
-        "username": "root",
-        "password": "Password2020#",
-        "folder": "/Templates"
-      }
-    ]
-  ]
+   }]
 }
